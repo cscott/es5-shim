@@ -27,10 +27,38 @@
   },
   "scripts": {
     "minify": "uglifyjs es5-shim.js --source-map=es5-shim.map -b ascii_only=true,beautify=false > es5-shim.min.js; uglifyjs es5-sham.js --source-map=es5-sham.map -b ascii_only=true,beautify=false > es5-sham.min.js",
+    "testling": "testling -u",
     "test": "jasmine-node --matchall tests/spec/"
+  },
+  "testling": {
+    "scripts": [
+      "tests/lib/jasmine.js",
+      "tests/lib/jasmine-tap.js",
+      "tests/helpers/h-matchers.js",
+      "tests/helpers/h-kill.js",
+      "es5-shim.js",
+      "tests/spec/s-*.js",
+      "tests/runner.js"
+    ],
+    "browsers": [
+      "iexplore/6.0..latest",
+      "firefox/3.0..6.0",
+      "firefox/15.0..latest",
+      "firefox/nightly",
+      "chrome/4.0..10",
+      "chrome/23.0..latest",
+      "chrome/canary",
+      "opera/10.0..latest",
+      "opera/next",
+      "safari/4.0..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest"
+    ]
   },
   "devDependencies": {
     "jasmine-node": "~1.11.0",
+    "jasmine-reporters": "git://github.com/larrymyers/jasmine-reporters#696cef66d9cb34b5d49879763fcb7c31020a3e3a",
+    "testling": "~1.5.3",
     "uglifyjs": "~2.3.6"
   },
   "engines": {
