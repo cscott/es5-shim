@@ -1,5 +1,7 @@
 [![Build Status][1]][2] [![dependency status][3]][4] [![dev dependency status][5]][6]
 
+[![browser support](https://ci.testling.com/cscott/es5-shim.png)](https://ci.testling.com/cscott/es5-shim)
+
 `es5-shim.js` and `es5-shim.min.js` monkey-patch a JavaScript context to
 contain all EcmaScript 5 methods that can be faithfully emulated with a
 legacy JavaScript engine.
