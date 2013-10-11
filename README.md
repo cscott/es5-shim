@@ -1,3 +1,5 @@
+[![Build Status][1]][2] [![dependency status][3]][4] [![dev dependency status][5]][6]
+
 `es5-shim.js` and `es5-shim.min.js` monkey-patch a JavaScript context to
 contain all EcmaScript 5 methods that can be faithfully emulated with a
 legacy JavaScript engine.
@@ -152,3 +154,9 @@ So in order to run the tests against the built-in methods, invalidate that file 
     provisions of this method, which you cannot possibly
     obtain in legacy engines.
 
+[1]: https://travis-ci.org/cscott/es5-shim.png
+[2]: https://travis-ci.org/cscott/es5-shim
+[3]: https://david-dm.org/cscott/es5-shim.png
+[4]: https://david-dm.org/cscott/es5-shim
+[5]: https://david-dm.org/cscott/es5-shim/dev-status.png
+[6]: https://david-dm.org/cscott/es5-shim#info=devDependencies
